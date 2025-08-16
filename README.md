@@ -54,7 +54,7 @@ npm install
 npm run storybook
 ```
 
-Storybook will open at [http://localhost:6006](http://localhost:6006).
+Storybook will open at [[(https://frontend-assignment-p1t3.vercel.app/?path=/docs/configure-your-project--docs)](https://frontend-assignment-p1t3.vercel.app/?path=/docs/configure-your-project--docs)]
 
 ### 4. Build Storybook (for deployment)
 
