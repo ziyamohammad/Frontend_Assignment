@@ -1,46 +1,124 @@
-# Getting Started with Create React App
+# 🎨 Frontend Assignment – React Components
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project contains two reusable React components (**InputField** and **DataTable**) built with **React, TypeScript, and TailwindCSS**, and documented using **Storybook**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📂 Folder Structure
 
-### `npm start`
+```
+Frontend_Assignment/
+├── .storybook/          # Storybook configuration
+├── src/
+│   ├── components/      # Reusable UI components
+│   │   ├── InputField.tsx
+│   │   └── DataTable.tsx
+│   └── stories/         # Storybook stories for components
+│       ├── InputField.stories.tsx
+│       └── DataTable.stories.tsx
+├── public/              # Static assets (empty or optional)
+├── package.json
+├── tailwind.config.js
+└── README.md
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## ⚡ Tech Stack
 
-### `npm test`
+* **React** (with TypeScript)
+* **TailwindCSS** for styling
+* **Storybook** for documentation
+* **Vercel** / **Chromatic** for deployment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Setup Instructions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone Repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/<your-username>/Frontend_Assignment.git
+cd Frontend_Assignment
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Install Dependencies
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 3. Run Storybook
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run storybook
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Storybook will open at [http://localhost:6006](http://localhost:6006).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 4. Build Storybook (for deployment)
 
-## Learn More
+```bash
+npm run build-storybook
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This generates the `storybook-static/` folder.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+## 🎯 Components
+
+### **1. InputField**
+
+A flexible and accessible input component.
+
+**Features:**
+
+* Label, placeholder, helper text, error message
+* States: disabled, invalid, loading
+* Variants: filled, outlined, ghost
+* Sizes: small, medium, large
+* Optional: clear button, password toggle
+
+---
+
+### **2. DataTable**
+
+A lightweight, reusable table component.
+
+**Features:**
+
+* Display tabular data
+* Column sorting
+* Row selection (single/multiple)
+* Loading and empty states
+
+---
+
+## 📘 Storybook Documentation
+
+Each component includes:
+
+* Props & API definitions (TypeScript types)
+* States & variants
+* Example use cases
+* Accessibility notes
+* Theming & responsiveness
+
+---
+
+## 🚀 Deployment
+
+This project is deployed using **Vercel**:
+🔗 [Live Storybook Link]((https://frontend-assignment-p1t3.vercel.app/?path=/docs/configure-your-project--docs))
+
+---
+
+## 📝 Approach
+
+* **Scalability First**: Each component is isolated inside `components/` with strongly typed props.
+* **Reusability**: Variants and sizes are driven by props, making the components flexible.
+* **Documentation**: Storybook covers all states, ensuring usability and clarity.
+* **Accessibility**: Components support focus states, ARIA roles, and keyboard navigation.
+
+---
