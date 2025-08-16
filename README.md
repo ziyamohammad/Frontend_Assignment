@@ -110,7 +110,7 @@ Each component includes:
 ## 🚀 Deployment
 
 This project is deployed using **Vercel**:
-🔗 [Live Storybook Link]((https://frontend-assignment-p1t3.vercel.app/?path=/docs/configure-your-project--docs))
+🔗(https://frontend-assignment-p1t3.vercel.app/?path=/docs/configure-your-project--docs)
 
 ---
 
